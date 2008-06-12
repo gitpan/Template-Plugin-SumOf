@@ -8,7 +8,7 @@ use List::Util qw/sum/;
 use Scalar::Util qw/blessed/;
 
 use version;
-our $VERSION = 0.01;
+our $VERSION = '0.02';
 
 $Template::Stash::LIST_OPS->{sum_of} = sub {
     my ( $self, $column ) = @_;

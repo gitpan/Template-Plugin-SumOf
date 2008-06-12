@@ -1,19 +1,17 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME          => 'Template::Plugin::SumOf',
-    AUTHOR        => 'Tokuhiro Matsuno <tokuhiro __at__ mobilefactory.jp>',
-    VERSION_FROM  => 'lib/Template/Plugin/SumOf.pm',
-    ABSTRACT_FROM => 'lib/Template/Plugin/SumOf.pm',
-    PL_FILES      => {},
-    PREREQ_PM     => {
-        'Test::More' => 0,
-        'Template'   => 0,
-        'List::Util' => 0,
-        'version'    => 0,
-    },
-    dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES    => 'Template-Plugin-SumOf-*' },
-);
+all_from 'lib/Template/Plugin/SumOf.pm',
+
+requires 'Test::More' => 0;
+requires 'Template'   => 0;
+requires 'List::Util' => 0;
+requires 'version'    => 0;
+
+test_requires 'Test::More';
+test_requires 'YAML';
+use_test_base;
+author_tests 'xt';
+auto_include;
+WriteAll;
