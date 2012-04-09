@@ -8,7 +8,7 @@ use List::Util qw/sum/;
 use Scalar::Util qw/blessed/;
 
 use version;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 $Template::Stash::LIST_OPS->{sum_of} = sub {
     my ( $self, $column ) = @_;
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Template::Plugin::SumOf - calcurate the sum with VMETHODS.
+Template::Plugin::SumOf - calculate the sum with VMETHODS.
 
 =head1 SYNOPSIS
 
@@ -54,7 +54,7 @@ Template::Plugin::SumOf - calcurate the sum with VMETHODS.
 
 =head1 DESCRIPTION
 
-You can easy to calcurate sum of array, with VMETHODS.
+You can easy to calculate sum of array, with VMETHODS.
 
 =head1 BUGS AND LIMITATIONS
 
@@ -75,7 +75,7 @@ L<Template>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2006, Tokuhiro Matsuno C<< <tokuhiro __at__ mobilefactory.jp> >>. All rights reserved.
+Copyright (c) 2006, Tokuhiro Matsuno C<< <tokuhirom @__at__ gmail.com> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.

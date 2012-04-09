@@ -1,5 +1,9 @@
 Revision history for Template-Plugin-SumOf
 
+0.03
+
+    - modernize package
+
 0.02
 
     - some tests moved to xt/
